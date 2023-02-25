@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    float: left;
+    width: 800px;
+    min-height: 400px;
+    margin: {
+        top: 80px;
+        left: calc((100% - 800px) / 2);
+        right: calc((100% - 800px) / 2);
+    }
+    border: solid 1px #000;
+
+    .player{
+        float: left;
+        width: 100%;
+    }
+
+    .music-list{
+        float: left;
+        width: 100%;
+
+        .block{
+            float: left;
+            width: 100%;
+            padding: 10px;
+            border-bottom: solid 1px #ccc;
+            position: relative;
+
+            .file_name{
+                padding: 5px;
+                background-color: aqua;
+                cursor: pointer;
+            }
+        }
+    }
+}
